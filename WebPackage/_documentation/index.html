@@ -1,0 +1,752 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Metro Mobile</title>
+	
+	<meta name="description" content="This documentation was made only with the Documenter (except the images)">
+	<meta name="author" content="Abdulkadir Atasoglu">
+	<meta name="copyright" content="Abdulkadir Atasoglu">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-05-09T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="css/custom.css" media="screen">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/jquery.1.6.4.js"></script>
+<script src="js/cufon.js"></script>
+<script src="js/font.js"></script>
+<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/shCore.js"></script>
+<script src="js/shBrushAS3.js"></script>
+<script src="js/shBrushCss.js"></script>
+<script src="js/shBrushXml.js"></script>
+<script src="js/shBrushJScript.js"></script>
+<script src="js/shBrushPhp.js"></script>
+<script src="js/shBrushPlain.js"></script>
+<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+<script>document.createElement('section');var duration=450,easing='easeOutExpo';</script>
+<script src="js/script.js"></script>
+<style>
+		html{background-color:#F3F3F3;color:#585858;background-image:url(assets/images/image_16.png);background-repeat:repeat;background-attachment:fixed;}
+		::-moz-selection{background:#111111;color:#F1F1F1;}
+		::selection{background:#111111;color:#F1F1F1;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_17.png);}
+		a{color:#111111;}
+		hr{border-top:1px solid #E5E5E5;border-bottom:1px solid #F9F9F9;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#333333;color:#F1F1F1;background-image:url(assets/images/image_18.gif);background-repeat:repeat-y;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #444444;-moz-text-shadow:1px 1px 0px #444444;text-shadow:1px 1px 0px #444444;}
+		#documenter_sidebar ol{border-top:1px solid #222222;}
+		#documenter_sidebar ol a{border-top:1px solid #444444;border-bottom:1px solid #222222;color:#F1F1F1;}
+		#documenter_sidebar ol a:hover{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_sidebar ol a.current{background:#111111;color:#F1F1F1;border-top:1px solid #111111;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+</head>
+<body><div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Information</a></li>
+			<li><a href="#htmlstructure">HTML Structure</a></li>
+            <li><a href="#tileinst">Tile Instruction</a></li>
+            <li><a href="#tileinst2">Sample Tiles</a></li>
+            <li><a href="#typography">Shortcodes & Typography</a></li>
+            <li><a href="#customize">Customize & Styles</a></li>
+            <li><a href="#portfolio">Portfolio & Gallery</a></li>
+            <li><a href="#contact">Contact Form</a></li>
+            <li><a href="#cameraslider">Camera Slider</a></li>
+            <li><a href="#addhome">Add Home Bubble</a></li>
+            <li><a href="#twitter">Twitter Plugin</a></li>
+            <li><a href="#mobiledetect">Integration to Desktop site</a></li>
+            <li><a href="#splash">Splash Screens</a></li>
+            <li><a href="#changelog">Change Log</a></li>
+			<li><a href="#source_credits">Source & Credits</a></li>
+
+
+		</ol>
+		<div id="documenter_copyright">Copyright Abdulkadir Atasoglu 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+	  </div>
+</div>
+<div id="documenter_content">
+<section id="documenter_cover">
+  <h1>Metro Mobile Mobile Template</h1>
+  <h2>&nbsp;</h2><hr><ul>
+      <li>Created: 17/11/2012
+      </li><li></li><li>By: Abdulkadir Atasoglu</li>
+      <li></li>
+      <li>Email: <a href="mailto:kadir@webbu.com">kadir&#64;&#119;&#101;&#98;&#98;&#117;&#46;&#99;&#111;&#109;</a></li></ul><p>This documentation was made only with <a href="http://rxa.li/documenter">the Documenter</a> (except the images)
+</p>
+
+</section>
+      
+<section id="htmlstructure">
+	<h3>HTML Structure</h3><hr class="notop">
+<p>
+	Hi, Thank you for purchase my template. And please don't forgot to rate :) ( On your download page )<br>
+HTML structure is simple and FULL commented for you;</p>
+
+<p><strong>For home page;</strong></p>
+<pre class="brush: html">
+...
+<!--body-->
+<!-- Loading Message -->
+<div class="spinnerbg">
+...
+</div>
+<!-- /Loading Message -->
+<!-- Wrapper -->
+<div class="wrapper">
+    <!-- Scrollable -->
+    <div class="scrollable">
+    <!-- Webbu Tiles -->
+    <div class="webbutiles">
+    ... <!-- Tiles -->
+    </div>
+    <!-- / Webbu Tiles -->
+    </div>
+    <!-- / Scrollable -->
+</div>
+<!-- / Wrapper -->
+<!--/body-->
+</pre>
+
+
+<p><strong>For sub pages;</strong></p>
+<pre class="brush: html">
+...
+<!--body-->
+<!-- Loading Message -->
+<div class="spinnerbg">
+...
+</div>
+<!-- /Loading Message -->
+<!-- Wrapper -->
+<div class="wrapper">
+    <!-- Scrollable -->
+    <div class="scrollable">
+    <!-- Webbu Tiles -->
+    <div class="MiddleContent">
+    ... <!-- Content -->
+    </div>
+    <!-- / Webbu Tiles -->
+    </div>
+    <!-- / Scrollable -->
+</div>
+<!-- / Wrapper -->
+<!--/body-->
+</pre>
+</section>
+
+
+
+
+
+
+
+<section id="tileinst">
+	<h3>Tile Instruction</h3><hr class="notop">
+<p>On this section i will tell you all about metro tiles. You will see a tile chart below picture. Let's first we check it then look at the sample codes below;</p>
+<img src="assets/images/tiles.jpg" width="1024" height="794">
+<p><strong>Tile Instruction:</strong> You will see lots of example below this line. I want to show you what does mean class code below;</p>
+<pre class="brush: html">
+<div class='tile TOrange(COLOR) double(SIZE) iconmain(TYPE)'>
+</pre>
+<p>The important think is if you want to create a tile must have <strong>class="tile"</strong> code. Another tags are COLOR, SIZE, TYPE this tags are listed below;</p>
+<p><strong>Tile Sizes;</strong> You can see all sizes picture up side.</p>
+<p><strong>Tile Type Code;</strong></p>
+<ul>
+<li>iconmain (For use icon tile and image icon tile)</li>
+<li>image (For use image, map, video tiles)</li>
+<li>(for slider tile you have to put none of type)</li>
+</ul>
+
+<p><strong>Tile Color Code;</strong></p>
+<ul>
+<li>TLightRed    (color code = #E51400)    </li>
+<li>TLightOrange    (color code = #FE8300)    </li>
+<li>TOrange    (color code = #FD5C04)    </li>
+<li>TRed    (color code = #BD0000)    </li>
+<li>TBrown    (color code = #7D6058)    </li>
+<li>TLightPurple    (color code = #E86EB2)    </li>
+<li>TDarkPurple    (color code = #8D0196)    </li>
+<li>TLightBlue    (color code = #5FCDCB)    </li>
+<li>TBlue    (color code = #1673D2)    </li>
+<li>TDarkBlue    (color code = #0849B1)    </li>
+<li>TFacebookBlue    (color code = #3B5D9C)    </li>
+<li>TTwitterBlue    (color code = #59D5E6)    </li>
+<li>TThumblrBlue    (color code = #2A4866)    </li>
+<li>TLinkedinBlue    (color code = #1477AC)    </li>
+<li>TDribbblePink    (color code = #F26097)    </li>
+<li>TTurquise    (color code = #5FCDCB)    </li>
+<li>TLightGrey    (color code = #E0E0E0)    </li>
+<li>TGrey    (color code = #BBB)    </li>
+<li>TDarkGrey    (color code = #666)    </li>
+<li>TLightGreen    (color code = #74E800)    </li>
+<li>TGreen    (color code = #00A300)    </li>
+<li>TDarkGreen    (color code = #008A00)    </li>
+<li>TBlack    (color code = #000)    </li>
+<li>TWhite    (color code = #fff)    </li>
+</ul>
+<p>Tile div contain 2 main side; 1-) boxcontent   2-) tilename;</p>
+<p><strong>boxcontent</strong> You can use all this elements see code below;</p>
+<pre class="brush: html">
+<div class='boxContent'>
+    <!-- Tile Icon -->
+</div>
+
+<div class='boxContent'>
+    <!-- Tile Image -->
+</div>
+
+<div class='boxContent'>
+    <!-- Tile Map -->
+</div>
+
+<div class='boxContent'>
+    <!-- Tile Video -->
+</div>
+
+<div class='boxContent'>
+    <!-- Tile Image Slider -->
+</div>
+</pre>
+
+
+<p><strong>tilename</strong> You can use all this elements see code below;</p>
+<pre class="brush: html">
+
+<!-- Just name and transparent bg color tilename -->
+<div class='tilename'>
+    <div class="name">Typography</div><!-- Name of tile -->
+</div>
+
+<!-- Sub bar color and name tilename -->
+<div class='tilename TOrange'>
+    <!-- Tile Name -->
+    <div class='name'>Gallery</div>
+</div>
+
+<!-- Sub icon tilename -->
+<div class="tilename TRed">
+    <div class="icon">
+    	<i class="icon-magic"></i>
+    </div>
+</div>
+</pre>
+</section>
+
+<section id="tileinst2">
+	<h3>Sample Tiles</h3><hr class="notop">
+<p><strong>Sample 1:</strong> This is sample <strong>linked icon tile</strong> tile code; If want to link a tile have to your like code below. But you can use without link you will see on Sample 2(you can see on index.html) </p>
+<pre class="brush: html">
+<!-- Orange Tile Sample -->
+<a class='tile TOrange double iconmain' href='typography.html'>
+    <div class='boxContent'>
+        <!-- Tile Icon -->
+        <i class='icon-reorder'></i>
+    </div>
+       
+    <div class='tilename'>
+         <!-- Tile Name -->
+        <div class="name">Typography</div>
+    </div>
+</a>
+<!-- / Orange Tile Sample -->
+</pre>
+
+<p><strong>Sample 2:</strong> This is sample <strong>unlinked icon tile</strong> tile code no link used; If want to link a tile have to your like code below.(you can see on index.html) </p>
+<pre class="brush: html">
+<!-- Orange Tile Sample -->
+<div class='tile TOrange double iconmain'>
+    <div class='boxContent'>
+        <!-- Tile Icon -->
+        <i class='icon-reorder'></i>
+    </div>
+       
+    <div class='tilename'>
+         <!-- Tile Name -->
+        <div class="name">Typography</div>
+    </div>
+</div>
+<!-- / Orange Tile Sample -->
+</pre>
+
+
+<p><strong>Sample 3:</strong> This is sample <strong>image</strong> tile code;(you can see on index.html) </p>
+<pre class="brush: html">
+<!-- Image Tile Sample-->
+<a class='tile white double image' href='gallery.html'>
+    <div class='boxContent'>
+        <!-- Tile Image Content -->
+        <img alt='' src='images/demo_content/21.jpg'>
+    </div>
+    
+    <!-- Tile Orange Sub Bar -->
+    <div class='tilename TOrange'>
+        <!-- Tile Name -->
+        <div class='name'>Gallery</div>
+    </div>
+</a>
+<!-- / Image Tile Sample-->
+</pre>
+
+
+<p><strong>Sample 4:</strong> This is sample <strong>image slider</strong> tile code;(you can see on index.html) </p>
+<pre class="brush: html">
+<!-- Slider Tile Files -->
+<script src='js/camera.js' type='text/javascript'></script> 
+<link href='css/camera.css' id='camera-css' media='all' rel='stylesheet' type='text/css'>
+<script>
+jQuery(function(){jQuery('.cameracontainer').camera({height: 'auto',loader: 'bar',pagination: false,thumbnails: false,time: 5000,transPeriod: 1500,});});
+</script>
+<!-- / Slider Tile Files -->
+
+
+<!-- Slider Tile Sample / Double Horizontal Tile Sample (double-box) = double H / Double v Box-->
+<div class='tile white double-box'>
+ <div class='boxContent cameracontainer camera_wrap' style='padding:0px;'>
+	<!-- Slider Image 1 -->
+	<div data-src='images/demo_content/slider1.jpg'></div>
+	<!-- Slider Image 2 -->
+	<div data-src='images/demo_content/slider2.jpg'></div>
+	<!-- Slider Image 3 -->
+	<div data-src='images/demo_content/slider3.jpg'></div>
+  </div>
+</div>
+<!-- Slider Tile Sample End -->
+</pre>
+
+
+
+<p><strong>Sample 5:</strong> This is sample <strong>video (2 tile code inside youtube and vimeo)</strong> tile code;(you can see on index.html) </p>
+<pre class="brush: html">
+<!-- Youtube Video Tile Tile Sample-->
+<a class='tile white double image' href='#'>
+<div class='boxContent'>
+    <!-- Video -->
+    <iframe class="videotile" src="http://www.youtube.com/embed/MT_r7Nw14EA?hd=1&wmode=opaque&autohide=1&showinfo=0"></iframe>
+</div>
+</a>
+<!-- / Youtube Video Tile Tile Sample-->
+
+
+<!-- Vimeo Video Tile Tile Sample-->
+<a class='tile white double image' href='#'>
+<div class='boxContent'>
+    <!-- Video -->
+    <iframe class="videotile" src="http://player.vimeo.com/video/23237102?api=1&player_id=player_1"></iframe>
+</div>
+</a>
+<!-- / Vimeo Video Tile Tile Sample-->
+</pre>
+
+
+
+<p><strong>Sample 6:</strong> This is sample <strong>map</strong> tile code;(you can see on index.html) </p>
+<pre class="brush: html">
+<!-- Map Tile Tile Sample-->
+<a class='tile white double image' href='#'>
+<div class='boxContent'>
+    <!-- Map -->
+    <iframe class="maptile" scrolling="no" src="http://maps.google.com/maps?q=Alsancak,%20Izmir,%20Turkey&output=embed"></iframe>
+</div>
+</a>
+<!-- / Map Tile Tile Sample-->
+</pre>
+
+
+
+<p><strong>Sample 7:</strong> This is sample <strong>image icon</strong> tile code;(you can see on index.html) </p>
+<pre class="brush: html">
+<!-- Brown Tile -->
+<a class='tile TBrown iconmain' href='portfolio.html'>
+<div class='boxContent'>
+    <!-- Image Icon Sample -->
+    <img src='images/demo_content/galleryicon.png' class='resimgicon' alt=''/>
+</div>
+
+<div class='tilename'>
+    <!-- Tile Name -->
+    <div class='name'>Portfolio</div>
+</div>
+</a>
+<!-- / Brown Tile -->
+</pre>
+
+</section>
+
+
+
+
+
+
+
+<section id="typography">
+	<h3>Shortcodes & Typography</h3><hr class="notop">
+<p>Metro Mobile is using Twitter Bootstrap 2.1 and you can find lot of typography examples on typography.html, tables.html, elements.html, icons.html, dividers.html, columns.html, columns-desktop.html ( for desktop size columns)  section. And you can see code samples on this pages.</p>
+
+</section>
+
+
+
+
+<section id="customize">
+	<h3>Cusromize & Styles</h3><hr class="notop">
+<p>Metro Mobile's main style is the <strong>css > styles.css</strong> If you want to use white background just change code below on style.css;</p>
+<pre class="brush: css">
+/* Import for other style sheets */
+
+ @import url(bootstrap-dark.css); /* For Dark Backgorund */
+ /*@import url(bootstrap-white.css); */ /* For Light Backgorund */
+ @import url(tiles.css); /* Tile settings */
+ @import url(style.css); /* Styles */
+ @import url(font-awesome.css); /* Font Awesome */
+
+/* Import Finish */
+
+</pre>
+
+<p>For customize font and sizes in style.css change code below;</p>
+<pre class="brush: css">
+/*--------------------------------------------------
+GENERAL LAYOUT - Change "font-family:'Open Sans',sans-serif;" tags and write your owns.
+There is 5 tags need to change.
+This tags will change entire site fonts.
+---------------------------------------------------*/
+body{margin:0px; font-size:12px; font-family: "Segoe UI", "Segoe WP", "RobotoRegular", sans-serif; line-height:20px; font-smooth:always}
+
+a{font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; font-size:12px; font-smooth:always}
+
+p{font-size:12px; font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; font-smooth:always}
+
+h1, h2, h3, h4, h5, h6{font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; margin-bottom:5px; font-smooth:always}
+
+li{font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; line-height:18px; font-smooth:always}
+</pre>
+
+<p> For custom background color in style.css change code below;</p>
+
+<pre class="brush: css">
+/* ==========================================================================
+   Metro Mobile HTML Template v1
+   CSS Document
+========================================================================== */
+
+/* Custom BG - Change URL url('images/yourbg.jpg')*/
+body{background-image: url(); background-repeat: repeat;}
+</pre>
+</section>
+
+
+
+
+
+
+<section id="portfolio">
+<h3>Portfolio & Gallery</h3>
+<hr class="notop">
+<p>For add new portfolio item use code below and please have a look portfolio.html for samples;
+</p>
+<pre class="brush: html">
+<li class="portfolio-two"> 
+    <a href="portfolio-single-map.html" title="Map Portfolio">
+    <img src="images/demo_content/gallery/gallery8.jpg" alt="" title="" />
+    <p><strong>Map Portfolio</strong><br>This post have map.</p>
+    </a>
+</li> 
+</pre>
+<p>And if you want to use three column portfolio use <pre class="brush: html"><li class="portfolio-three"></li></pre> </p>
+<p>Or if you want to use one column portfolio use <pre class="brush: html"><li class="portfolio-one"></li></pre> </p>
+<p>Two column is on the sample code. And you can find more samples on portfolio side.</p>
+
+
+<h3>Gallery</h3><hr class="notop">
+<p>For add new gallery item use code below and please have a look gallery.html samples;
+</p>
+<pre class="brush: html">
+<li class="gallery-two">
+    <a href="images/demo_content/5695328469_4d64bf6d0b_b.jpg">
+    <img alt="Puffy" src="images/demo_content/5695328469_4d64bf6d0b_b.jpg" title="Puffy">
+    </a>
+</li>
+</pre>
+<p>And if you want to use three column gallery use <pre class="brush: html"><li class="gallery-three"></li></pre> </p>
+<p>Or if you want to use one column gallery use <pre class="brush: html"><li class="gallery-one"></li></pre> </p>
+<p>Two column is on the sample code</p>
+</section>
+
+
+
+<section id="contact">
+	<h3>Contact Form Configuration</h3><hr class="notop">
+<p>For change contact form email and information please find <strong>contact-send.php</strong> find and change code below;
+</p>
+
+<pre class="brush: php">
+
+$toemail = 'test@youremail.com'; // To Email Address Just Change This
+$name = $_POST['name']; // Name Field
+$email = $_POST['email']; // Email Field
+$message = $_POST['message']; // Message Field
+if(mail($toemail, 'Subject', $message, 'From: ' . $email)) {
+    echo '<div class="cmessage" >Your email was sent successfully.</div>'; // Send succesfull message 
+} else {
+    echo '<div class="cmessage">There was a problem sending your email.</div>'; // Send Error Message
+}
+
+</pre>
+
+<p>For change language of error text find code below on contact.html / php and change <strong>validationEngine-en.js</strong> <strong>en</strong> to your language.</p>
+
+<pre class="brush:html">
+<!-- Form Validation -->
+<link rel="stylesheet" type="text/css" href="css/validationEngine.jquery.css">
+<script src="js/languages/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+<script>
+jQuery(document).ready(function(){
+    // binds form submission and fields to the validation engine
+    jQuery("#contact_form").validationEngine();
+});
+
+</script>
+</pre>
+</section>
+
+
+
+
+
+
+
+
+<section id="cameraslider">
+<h3>Camera Slider</h3><hr class="notop">
+<p>You can use this slider all size tiles. You will see a demo of use on Sample Tiles section. I want to tell you how to change camera slider default values.;
+<br>
+You will see <strong>time: 5000</strong> and <strong>transPeriod: 1500</strong> this mean duration time is <strong>time</strong> and transition period is <strong>transPeriod</strong>. You can change these values mili second time range.<br>
+
+If you want to edit camera slider js file you can find in <strong>js > camera.js</strong>
+</p>
+
+<pre class="brush: js">
+
+<script>
+jQuery(function(){jQuery('.cameracontainer').camera({height: 'auto',loader: 'bar',pagination: false,thumbnails: false,time: 5000,transPeriod: 1500,});});
+</script>
+
+</pre>
+
+</section>
+
+
+
+
+
+
+
+
+<section id="addhome">
+<h3>Add Home Bubble</h3>
+<hr class="notop">
+<p>The homepage uses a script which creates a "Add to Home" bubble on iPhones and iPads. You can edit this image from index.html header section code below;<strong> And you can find sample images on _sources folder</strong>.</p>
+<pre class="brush: html">
+<!-- Shortcut Logos -->
+    <link href="images/demo_content/metroentrance1.jpg" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="images/demo_content/metroentrance57.jpg" rel="shortcut icon">
+<!-- /Shortcut Logos -->
+</pre>
+<p>Also i have putted some sample images to <strong>_sources > touch</strong> folder for help you create.</p>
+<pre class="brush: jscript">
+<script src="js/add2home.js" charset="utf-8"></script><!-- Iphone Bubble  --> 	
+</pre>
+<p>To change settings of the bubble open js > add2home.js You can change the animation entering and leaving the page, how long you want the bubble to stay on the page and how long before it shows up again.</p>
+<pre class="brush: jscript">
+options = {
+autostart: true,			// Automatically open the balloon
+returningVisitor: false,	// Show the balloon to returning visitors only (setting this to true is HIGHLY RECCOMENDED)
+animationIn: 'drop',		// drop || bubble || fade
+animationOut: 'fade',		// drop || bubble || fade
+startDelay: 2000,			// 2 seconds from page load before the balloon appears
+lifespan: 15000,			// 15 seconds before it is automatically destroyed
+bottomOffset: 14,			// Distance of the balloon from bottom
+expire: 0,					// Minutes to wait before showing the popup again (0 = always displayed)
+message: '',				// Customize your message or force a language ('' = automatic)
+touchIcon: false,			// Display the touch icon
+arrow: true,				// Display the balloon arrow
+hookOnLoad: true,			// Should we hook to onload event? (really advanced usage)
+iterations: 100				// Internal/debug use
+</pre>
+</section>
+
+
+
+
+
+
+<section id="twitter">
+<h3>Twitter Plugin</h3><hr class="notop">
+
+<p><strong>STEP 1</strong></p>
+<p> You have to change twitter user name on <strong> js > twitter.js</strong> line 9 you have to change code below to your username;(change webbudesign to your username)</p>
+<pre class="brush: js">
+...
+// Set twitter username, number of tweets & id/class to append tweets
+	user: 'webbudesign', // Your Twitter Username
+	numTweets: 5, // Number of tweets
+	appendTo: '#jstwitter',
+...
+
+// Change http://metromobile.webbudesign.com to your web site directory.
+jQuery.ajax({
+    url: 'http://metromobile.webbudesign.com/js/grabtweets.php',
+    type: 'POST',
+....
+</pre>
+<br/>
+<p><strong>STEP 2</strong></p>
+<p>AND THEN YOU NEED TO GET YOUR CONSUMER KEY AND OTHER API KEYS. PLEASE CHECK THIS PDF FOR HELP: <a href="http://webbudesign.com/twitter_help.pdf" target="_blank">http://webbudesign.com/twitter_help.pdf</a></p>
+
+<br/>
+<p><strong>STEP 3</strong></p>
+<p>Please find js > grabtweets.php and replace below code with your api keys;</p>
+
+<pre class="brush: php">
+...
+$CONSUMER_KEY = "PLEASE WRITE CONSUMER KEY";
+$CONSUMER_SECRET = "PLEASE WRITE CONSUMER SECRET";
+$ACCESS_TOKEN = "PLEASE WRITE ACCESS TOKEN";
+$ACCESS_TOKEN_SECRET = "PLEASE WRITE  ACCESS TOKEN SECRET";
+....
+</pre>
+
+<p>Then save and upload all files to your server. That is it.</p>
+</section>
+
+
+
+<section id="mobiledetect">
+<h4>Integration to Desktop site</h4>
+
+<p><img src="assets/images/use.jpg" width="616" height="350"></p>
+<p>&nbsp;
+</p>
+<div>
+  <p>Create a domain line m.yourdomain.com or create a subfolder like www.yoursite.com/mobile and upload metromobile codes on this directory.  Now the problem how you redirect users come in to your</p>
+  <p>desktop site. It is easy just use that code below; ( DON &rsquo;T FORGET TO CHANGE WWW .YOURSITE.COM TO YOUR OWN SITE AND FOLDER )</p>
+  <pre class="brush: js">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script>
+function mobile_detect(mobile,tablet,mobile_redirect,tablet_redirect,debug) {
+    var ismobile = (/iphone|ipod|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase()));
+    var istablet = (/ipad|android 3|sch-i800|playbook|tablet|kindle|gt-p1000|sgh-t849|shw-m180s|a510|a511|a100|dell streak|silk/i.test(navigator.userAgent.toLowerCase()));
+
+    if (debug == true) {
+        alert(navigator.userAgent);
+    }
+
+    if (ismobile && mobile==true) {
+        if (debug == true) {
+            alert("Mobile Browser");
+        }
+        window.location = mobile_redirect;
+    } else if (istablet && tablet==true) {
+        if (debug == true) {
+            alert("Tablet Browser");
+        }
+        window.location = tablet_redirect;
+    }
+}
+</script>
+<script>
+$(document).ready(function(){
+    mobile_detect(true,true,"http://WWW.YOURSITE.COM/MOBILE","http://WWW.YOURSITE.COM/MOBILE",false);
+});
+</script></pre>
+  <p>After finish to edit this code just put your desktop site's index.html file. You will see &lt;head&gt; tag top of this file put this redirection code under the &lt;head&gt; tag. Than when a person who enter your site with mobile will be redirected mobile.</p>
+  <p>If they don&rsquo;t use mobile devices they will see your desktop template.</p>
+</div>
+</section>
+
+
+<section id="splash">
+<h3>Splash Screen</h3>
+
+<p>Just added new splash screen settings. You can have a check code below on index.html;</p>
+<p>And will find sample splash screens in to the images/demo_content/splashscreens folder.</p>
+
+<pre class="brush: html">
+<!-- Splash screens -->
+<!-- iPhone 320x460 -->
+<link href="images/demo_content/splashscreens/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+<!-- iPhone (Retina) 640x920 -->
+<link href="images/demo_content/splashscreens/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPhone 5 640x1096-->
+<link href="images/demo_content/splashscreens/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPad 768x1004 / 748x1024-->
+<link href="images/demo_content/splashscreens/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+<link href="images/demo_content/splashscreens/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+<!-- iPad (Retina) 1536x2008 / 1496x2048 -->
+<link href="images/demo_content/splashscreens/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<link href="images/demo_content/splashscreens/apple-touch-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- / Splash Screens -->
+</pre>
+<p>&nbsp;	</p>
+
+</section>
+
+
+
+<section id="changelog">
+<h4>
+  Version 1.0 (27/11/2012)</h4>
+<pre class="brush: plain">
+Splash screen & iphone 5 letterbox problem fixed.</pre>
+<p>&nbsp;	</p>
+
+<h4>
+  Version 1.0 (17/11/2012)</h4>
+<pre class="brush: plain">
+Released</pre>
+<p>&nbsp;	</p>
+</section>
+
+
+
+
+
+
+<section id="source_credits">
+	<h3>Source & Credits</h3><hr class="notop">
+<p>	Thanks so much to</p>
+<ul>	
+  <li>jQuery</li>
+  <li><a href="http://html5boilerplate.com/mobile/" target="_blank">Mobile boilerplate</a></li>
+  <li> <a href="http://www.pixedelic.com/plugins/camera/" target="_blank"> Camera Slider</a></li>
+  <li><a href="http://metro.windowswiki.info/mi/" target="_blank">Metro icons from</a></li>
+  <li> <a href="http://www.photoswipe.com/" target="_blank">PhotoSwipe</a></li>
+  <li><a href="http://codepen.io/davidchase/pen/qkKpx" target="_blank">Loading animation from</a></li>
+  <li><a href="http://phraisohn.deviantart.com" target="_blank">Preview Images from</a></li>
+  <li><a href="http://alfoart.com/" target="_blank">Alfo Art - Preview Images</a></li>
+  <li><a href="http://www.morguefile.com">Morgue File - Preview Images</a></li>
+  <li>Icons used from <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a></li>
+  <li><a href="http://www.glyphish.com/">Sample Image Icons are from http://www.glyphish.com/</a>(extended licence)</li>
+    
+</ul>
+<p>&nbsp;	</p>
+</section>
+
+</div>
+</body>
+</html>
