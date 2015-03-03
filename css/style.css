@@ -11,17 +11,10 @@
 */
 
 /* Import for other style sheets */
-
  @import url(bootstrap-dark.css); /* For Dark Backgorund */
- /*@import url(bootstrap-white.css); */ /* For Light Backgorund */
  @import url(tiles.css); /* Tile settings */
- @import url(style.css); /* Styles */
- @import url(font-awesome.css); /* Font Awesome */
 
 /* Import Finish */
-
-
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,500|Roboto+Condensed:400,700);
 
 /* ==========================================================================
    Metro Mobile HTML Template v1
@@ -29,13 +22,12 @@
 ========================================================================== */
 
 /* Custom BG - Change URL url('images/yourbg.jpg')*/
-body{background-image: url(); background-repeat: repeat;}
+body{background-image: url(); background-repeat: repeat; background-color: #000;}
 
 
 html
 {
 	height: 100%;
-	
 }
 
 
@@ -61,15 +53,22 @@ GENERAL LAYOUT - Change "font-family:'Open Sans',sans-serif;" tags and write you
 There is 5 tags need to change.
 This tags will change entire site fonts.
 ---------------------------------------------------*/
-body{margin:0px; font-size:12px; font-family: "Segoe UI", "Segoe WP", "RobotoRegular", sans-serif; line-height:20px; font-smooth:always}
 
-a{font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; font-size:12px; font-smooth:always}
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
 
-p{font-size:12px; font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; font-smooth:always}
+body{margin:0px; font-size:12px; line-height:20px; font-smooth:always}
 
-h1, h2, h3, h4, h5, h6{font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; margin-bottom:5px; font-smooth:always}
+a{ sans-serif; font-size:12px; font-smooth:always}
 
-li{font-family:"Segoe UI", "Segoe WP",  'RobotoRegular', sans-serif; line-height:18px; font-smooth:always}
+p{font-size:12px; font-smooth:always}
+
+h1, h2, h3, h4, h5, h6{ margin-bottom:5px; font-smooth:always}
+
+li{ line-height:18px; font-smooth:always}
+
 
 /*--------------------------------------------------
 GENERAL LAYOUT
