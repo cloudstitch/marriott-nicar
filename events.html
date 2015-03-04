@@ -22,8 +22,9 @@
     
     <!-- Style -->
     <link href='css/style.css' id='styles-css' media='all' rel='stylesheet' type='text/css'>
-    <!-- / Style -->
-    
+        <link href='./fa/css/font-awesome.css' media='all' rel='stylesheet' type='text/css'><!-- General Style -->
+    <link href='ted.css' id='styles-css' media='all' rel='stylesheet' type='text/css'>
+
     <!-- Scripts -->
   <script src='js/jquery-2.1.1.min.js'></script>
     <script src='js/jquery-migrate-1.2.1.min.js'></script>
@@ -33,6 +34,10 @@
     <script src='js/jquery.mobile.customized.min.js' type='text/javascript'></script>
     <script src='js/vendor/modernizr-2.6.1.min.js' type='text/javascript'></script>
     <!-- / Scripts -->
+
+    <script src="http://static.cloudstitch.io/cloudstitch.js" app="ted/hampton-inn-sxsw-guide"></script>
+    <link type="cloudstitch/gsheet" href="http://cloudstitch.io/ted/hampton-inn-sxsw-guide/datasource/sheet" />
+
 </head>
 <body>
 
@@ -59,23 +64,110 @@
             <div class="MiddleContent">
             <!--START BLOG POSTS-->
             <!--START POST-->
-    
-            <div class="post mainbox" id="post-274">  
-            <div class="inside_content">
-                <!--START POST-TITLE-->
-                <div class="post-title">        
-                    <h2 class="title">Event Name</h2>
-                </div>
-                <div class="post-info">   
-                    <div class="date badge badge-important"><i class="icon-calendar"></i> November 4th, 2012</div>
-                </div>
-                <div class="post-content">  
-                    <p>You can use tile posts aswell.</p>                    
-                </div>
 
-                <button class="btn btn-sm btn-success" style="width: 23%; margin-left: 35%">Map</button>
+            <style>
+              .meta-header {
+                padding-right: 20px;
+              }
+              .map-btn {
+                padding: 1px 7px 1px 7px;
+              }
+              a.show {
+                font-size: 24px;
+                display: inline;
+              }
+            </style>
 
-             </div>
+            <script>
+            var today = new Date();
+            var dm = today.getDay() + '/' + today.getMonth();
+            var dmy = today.getDay() + '/' + today.getMonth() + '/' + today.getYear();
+
+            function showToday() {
+              $('.showToday').css('font-weight', 'bold');
+              $('.showUpcoming').css('font-weight', 'normal');
+              var i = 0;
+              $('#nonethere').hide();                
+              $('#nonetheretomorrow').hide();                
+              $.each($('.event'), function(idx, e) {
+                e = $(e);
+                if ((e.attr('data-date') == dm) || (e.attr('data-date') == dmy)) {
+                  e.show();
+                  i++;
+                } else {
+                  e.hide();
+                }
+              });
+              if (i == 0) {
+                $('#nonethere').show();
+              } else {
+                $('#nonethere').hide();                
+              }
+
+            }
+
+            function showUpcoming() {
+              $('.showToday').css('font-weight', 'normal');
+              $('.showUpcoming').css('font-weight', 'bold');
+              var i = 0;
+              $('#nonethere').hide();                
+              $('#nonetheretomorrow').hide();                
+              $.each($('.event'), function(idx, e) {
+                e = $(e);
+                if ((e.attr('data-date') == dm) || (e.attr('data-date') == dmy)) {
+                  e.hide();
+                } else {
+                  e.show();
+                  i++;
+                }
+              });
+              if (i == 0) {
+                $('#nonetheretomorrow').show();
+              } else {
+                $('#nonetheretomorrow').hide();                
+              }
+            }
+
+            CTS(function() {
+              showToday();
+            })
+            </script>
+            <p align="center" style="font-size: 24px; margin-bottom: 20px;">
+            <a href="#" class="show showToday" onclick="showToday(); return false">today</a> <span style="color: #888">|</span> <a href="#" class="showUpcoming show" onclick="showUpcoming(); return false;">upcoming</a>
+            </p>
+            <div id="nonethere" style="display:none;">
+              <p align="center">No events are listed for today.</p>
+            </div>
+
+            <div id="nonetheretomorrow" style="display:none;">
+              <p align="center">No upcoming events are listed.</p>
+            </div>
+
+            <div connect="Events!rows">
+                <div class="event info-card post mainbox" data-cts='this {"attribute": "data-date"} :is sheet|Events!col(Date);' id="post-274">  
+                <div class="inside_content">
+                    <!--START POST-TITLE-->
+                    <div class="post-title">        
+                        <h2 connect="Events!col(Title)" class="title"></h2>
+                    </div>
+
+                    <table class="post-info post-meta"> 
+                      <tr>
+                        <td class="meta-header"><b>When</b></td>
+                        <td><span connect="Events!col(Date)"></span>&nbsp;&nbsp;<span connect="Events!col(StartTime)"></span><span show-if="Events!col(EndTime)"> - <span connect="Events!col(EndTime)"></span></span></td>
+                      </tr>
+                      <tr>
+                        <td><b>Where</b></td>
+                        <td><span connect="Events!col(LocationName)"></span> <span show-if="Events!col(LocationAddress)"><a data-cts='this {"attribute": "href", "prefix": "https://www.google.com/maps/place/"} :is sheet|Events!col(LocationAddress);' class="btn btn-xs btn-success map-btn" href="#"><i class="fa fa-map-marker"></i> map</a></span></td>
+                      </tr>                    
+                    </table>
+
+                    <div class="post-content">  
+                        <p connect="Events!col(Description)"></p>                    
+                    </div>
+
+                 </div>
+                </div>
             </div>
             <!--END POST-->
             

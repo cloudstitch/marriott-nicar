@@ -31,6 +31,9 @@
     <script src='js/vendor/modernizr-2.6.1.min.js' type='text/javascript'></script>
     <!-- / Scripts -->
     
+    <script src="http://static.cloudstitch.io/cloudstitch.js" app="ted/hampton-inn-sxsw-guide"></script>
+    <link type="cloudstitch/gsheet" href="http://cloudstitch.io/ted/hampton-inn-sxsw-guide/datasource/sheet" />
+
 </head>
 
 <body>    
@@ -118,17 +121,16 @@
         
         <div class='tilename'>
             <!-- Tile Name -->
-            <div class='name'>Hampton Inn</div>
+            <div class='name'>Call Hampton Inn</div>
         </div>
         </a>
         <!-- / Dark Purple Tile Sample / Phone Call Link -->
-
 
        <div connect="Links!rows">
             <a connect-href="Links!col(URL)" class='tile TDarkGrey iconmain' href='#'>
             <div class='boxContent'>
                 <!-- Tile Icon -->
-                <i class='' data-cts='this :if-exist sheet|Links!col(Icon); this {"prefix": "fa fa-"} :is Links!col(Icon)'></i>
+                <i class='' data-cts='this :if-exist sheet|Links!col(Icon); this {"attribute": "class", "prefix": "fa fa-"} :is sheet|Links!col(Icon)'></i>
             </div>
             
             <div class='tilename'>

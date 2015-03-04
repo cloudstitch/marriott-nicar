@@ -1,0 +1,21 @@
+a.action {
+  margin: 5px;
+  border: 2px solid white;
+  background: #111;
+
+}
+
+.info-card h2.title {
+    color: #333;
+}
+
+.info-card {
+  color: black;
+  background: white;
+  border: 2px solid #ccc;
+  padding: 10px 5px 10px 5px;
+  margin: 10px 5px 10px 5px;
+}
+.cost {
+    margin-left: 15px;
+}
